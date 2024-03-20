@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xyValues = [
+{x:0.0, y:0.0},
+{x:0.5, y:263},
+{x:0.7, y:432},
+{x:1.0, y:560},
+{x:2.0, y:640},
+{x:4.0, y:661},
+{x:8.0, y:680},
+{x:12.0, y:707},
+{x:16.0, y:713},
+{x:19.0, y:717},
+{x:23.0, y:722},
+{x:25.0, y:724},
+]
+
+new Chart("myChart", {
+  type:"scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues,
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 0.0, max:25.0}}],
+      yAxes: [{ticks: {min: 0.0, max:725.0}}],
+    }
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moving Electrons</title>
+  <style>
+    .p-type {
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+      position: relative;
+      top:200px;
+      left:200px;
+      text-align: center;
+    }
+
+    .dpl{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(247, 247, 247);
+        position: relative;
+        left:400px;
+        top:100px;
+        text-align: center;
+    }
+
+    .n-type {
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+      position: relative;
+      left:500px;
+      text-align: center;
+    }
+
+    .electron1 {
+        width: 10px;
+        height: 5px;
+        background-color: #ff0;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        border-radius: 50%;
+        animation: moveElectron1 1s infinite linear;
+      }
+  
+      @keyframes moveElectron1 {
+        0% {
+          right: 0%;
+        }
+        100% {
+          right: 100%;
+        }
+      }
+  
+      .electron2 {
+          width: 10px;
+          height: 5px;
+          background-color: #ff0;
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          border-radius: 50%;
+          animation: moveElectron2 1s infinite linear;
+        }
+    
+        @keyframes moveElectron2 {
+          0% {
+            top: 0%;
+          }
+          100% {
+            top: 100%;
+          }
+        }
+  
+        .electron3 {
+          width: 10px;
+          height: 5px;
+          background-color: #ff0;
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          border-radius: 50%;
+          animation: moveElectron3 1s infinite linear;
+        }
+    
+        @keyframes moveElectron3 {
+          0% {
+            left: 0%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+  
+        .electron4 {
+          width: 10px;
+          height: 5px;
+          background-color: #ff0;
+          position: absolute;
+          bottom: 50%;
+          right: 50%;
+          border-radius: 50%;
+          animation: moveElectron4 1s infinite linear;
+        }
+    
+        @keyframes moveElectron4 {
+          0% {
+            bottom: 0%;
+          }
+          100% {
+            bottom: 100%;
+          }
+        }
+
+        .con1{
+            width:100px;
+            height:15px;
+            background-color:black;
+            position: relative;
+            bottom:50px;
+            left:100px;
+          
+        }
+        
+        .con2{
+            width:15px;
+            height:175px;
+            background-color:black;
+            position: relative;
+            left:100px;
+            bottom:50px;
+          
+        }
+    
+        .con3{
+            width:700px;
+            height:15px;
+            background-color:rgb(15, 14, 14);
+            position: relative;
+            bottom: 50px;
+            left:100px;
+
+             
+        }
+    
+        .con4{
+          width:15px;
+          height:190px;
+          background-color:black;
+          position: relative;
+          bottom:315px;
+          left:800px;
+        }
+
+        .con5{
+            width:115px;
+            height:15px;
+            background-color:black;
+            position: relative;
+            left:700px;
+            bottom:515px;
+        
+          }
+        
+      
+
+      .bat{
+        width: 100px;
+        height: 75px;
+        background-color:rgb(169, 62, 26);
+        position: relative;
+        left:400px;
+        bottom:100px;
+        text-align: center;
+      }  
+   
+  </style>
+</head>
+<body>
+
+  <div>
+
+
+    <div class="p-type">
+        P-TYPE
+        <div class="electron1">e-</div>
+    </div>
+    <div class="dpl">
+        DEPLETION-REGION
+        <div class="electron1">e-</div>
+    </div>
+    <div class="n-type">
+        N-TYPE
+        <div class="electron1">e-</div>
+    </div>
+    <div class="con1">
+        <div class="electron1">e-</div>
+    </div>
+    <div class="con2">
+        <div class="electron2">e-</div>
+    </div>
+    <div class="con3">
+        <div class="electron3">e-</div>
+    </div>
+    <div class="bat"> BATTERY
+    </div>
+    <div class="con4">
+        <div class="electron4">e-</div>
+    </div>
+    <div class="con5">
+        <div class="electron1">e-</div>
+    </div>
+
+    
+    
+    
+
+  </div>
+
+
+</body>
+</html>

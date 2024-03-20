@@ -1,0 +1,191 @@
+
+.p-type {
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  position: relative;
+  top:250px;
+  left:300px;
+  text-align: center;
+}
+
+.dpl{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+    left:500px;
+    top:150px;
+    text-align: center;
+}
+
+.n-type {
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  position: relative;
+  left:600px;
+  top:50px;
+  text-align: center;
+}
+
+.electron1 {
+    width: 10px;
+    height: 5px;
+    background-color: #ff0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-radius: 50%;
+    animation: moveElectron1 1s infinite linear;
+  }
+
+  @keyframes moveElectron1 {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+
+  .electron2 {
+      width: 10px;
+      height: 5px;
+      background-color: #ff0;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      border-radius: 50%;
+      animation: moveElectron2 1s infinite linear;
+    }
+
+    @keyframes moveElectron2 {
+      0% {
+        top: 0%;
+      }
+      100% {
+        top: 100%;
+      }
+    }
+
+    .electron3 {
+      width: 10px;
+      height: 5px;
+      background-color: #ff0;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      border-radius: 50%;
+      animation: moveElectron3 1s infinite linear;
+    }
+
+    @keyframes moveElectron3 {
+      0% {
+        left: 0%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    .electron4 {
+      width: 10px;
+      height: 5px;
+      background-color: #ff0;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      border-radius: 50%;
+      animation: moveElectron4 1s infinite linear;
+    }
+
+    @keyframes moveElectron4 {
+      0% {
+        bottom: 0%;
+      }
+      100% {
+        bottom: 100%;
+      }
+    }
+
+    .con1{
+        width:100px;
+        height:15px;
+        background-color:black;
+        position: relative;
+        bottom:0px;
+        left:200px;
+      
+    }
+    
+    .con2{
+        width:15px;
+        height:175px;
+        background-color:black;
+        position: relative;
+        left:200px;
+        bottom:0px;
+      
+    }
+
+    .con3{
+        width:700px;
+        height:15px;
+        background-color:rgb(15, 14, 14);
+        position: relative;
+        bottom: 0px;
+        left:200px;
+
+         
+    }
+
+    .con4{
+      width:15px;
+      height:190px;
+      background-color:black;
+      position: relative;
+      bottom:265px;
+      left:900px;
+    }
+
+    .con5{
+        width:115px;
+        height:15px;
+        background-color:black;
+        position: relative;
+        left:800px;
+        bottom:465px;
+      }
+    
+  
+
+  .bat{
+    width: 100px;
+    height: 75px;
+    background-color:rgb(169, 62, 26);
+    position: relative;
+    left:500px;
+    bottom:50px;
+    text-align: center;
+  }  
+    
+  .arrow-container {
+    position: absolute;
+    top:250px;
+    left:540px;
+    animation: moveUp 1s linear infinite;
+    text-align:start;
+  }
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid rgb(246, 255, 0);
+    margin-bottom:10px;
+  }
+  @keyframes moveUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+  }
